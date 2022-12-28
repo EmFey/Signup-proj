@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>SBC-signup</title>
+</head>
+<body>
+    <div class="formElements">
+        <p>Welcome to Pretoria SunnySide Bowling Club</p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <form class="form" action="../Q2/index.html" onsubmit="return validate()">
+    
+                <div class="formElements">
+                    <label for="signup" style="font-size: 30px;" class="mainLabel">Sign-up Form</label>
+                </div>
+                <div class="formElements">
+                    <img src="SUNNYSIDE.png" alt="Sunnyside-logo">
+                </div>
+                
+                <div class="formElements">
+                    <label>First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Eg: Samuel" onchange="nameValidate()">
+                </div>
+                
+                <div class="formElements">
+                    <label>Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Eg: Johnson" onchange="surnameValidate()">
+                </div>
+                
+                <div class="formElements">
+                    <label>Address:</label>
+                    <input type="text" name="address" id="address" placeholder="Eg: 12 Richard Road" onchange="addressValidate()">
+                </div>
+               
+                <label>Gender:</label>
+                <input type="radio" name="gender" required id="">Male
+                <input type="radio" name="gender" required id="">Female
+    
+                <div class="formElements">
+                    <label>Email Id:</label>
+                    <input type="email" name="email" id="email" placeholder="Eg: samJ@gmail.com" onchange="emailValidate()">
+                </div>
+    
+                <div class="formElements">
+                    <label>Mobile:</label>
+                    <input type="number" name="tel" id="tel" placeholder="Eg: 0987654321" onchange="telValidate()">
+                </div>
+                
+                <div class="formElements">
+                    <label>Location</label>
+                    <select name="location" id="" required>
+                        <option value="">Please select option</option>
+                        <option value="boardwalk">Boardwalk</option>
+                        <option value="brooklyn">Brooklyn</option>
+                        <option value="lynnwood">Lynnwood</option>
+                        <option value="sunnyside">Sunnyside</option>
+                    </select>
+                </div>
+                
+                <div class="formElements">
+                    <input type="submit" value="Sign-up" id="signup">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
